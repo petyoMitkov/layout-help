@@ -1,3 +1,32 @@
 body {
   background-color: orange;
+  margin: 0;
+}
+
+.div-background {
+  background-image: url("./../bg_image.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* >>>> Try with min and max height <<<<<*/
+  /* min-height: 250px;
+  max-height: 500px; */
+  width: 100vw;
+  height: 50vh;
+  color: white;
+
+}
+
+.text-box {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    left: 50px;
+    margin-right: 50px;
+    line-height: 40px;
+  }
 }
